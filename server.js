@@ -2,7 +2,6 @@ const express = require('express');
 const fs = require('fs');
 const { reset } = require('nodemon');
 const pug = require('pug');
-const bodyParser = require('body-parser');
 const config = require("./public/config.json");
 
 
@@ -20,7 +19,7 @@ server.use('/', express.static('public'));
  * https://expressjs.com/en/guide/using-template-engines.html
  */
 server.set('view engine', 'pug');  
-const urlencodedParser = bodyParser.urlencoded({
+const urlencodedParser = express.urlencoded({
   extended: true
 });
 server.get('/order', (req, res, next) =>{
