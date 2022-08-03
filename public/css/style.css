@@ -1,0 +1,267 @@
+html{
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://c.tenor.com/tr-K0EESp8EAAAAC/cherry-blossom-falling.gif);
+}
+#menu-icon{
+    display: flex;
+    width : 2em;
+    
+    border: 1px solid #ffc0cb;
+    border-radius: 3px;
+}
+nav{
+    width:fit-content;
+    
+}
+#menu {
+    background-color: rgb(255, 240, 251);
+    box-shadow: 5px 5px 10px pink;
+    display: flex;
+    flex-flow: column;
+    padding: .5em;
+    width: 95px;
+    height: 250px;
+    text-align: center;
+    transition: margin 0.5s;
+    justify-content: space-evenly;
+    font-size: 1.9em;
+    font-family: 'Cookie', cursive;
+    color: black;
+    float: left;
+    border: 1px solid #ffc0cb;
+    border-radius: 3px;
+    z-index: 1000; 
+	position: absolute;
+}
+a:link{
+    
+    color: palevioletred;
+    text-decoration: none;
+}
+a:visited{
+    color: pink;
+    text-decoration: none;
+}
+#menu.open{
+    margin-left: 0;
+}
+#menu.close{
+    margin-left: -234px;
+}
+#myform{
+    transition: 1s;
+    display: flex;
+    flex-flow: column;
+    width: 550px;
+    justify-content: space-between;
+    height: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ffc0cb;
+    box-shadow: 0px 0px 35px pink;
+    border-radius: 3px;
+}
+input{
+    
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+    margin: auto;
+    background-color: pink;
+    font-style: italic;
+    border: 1px solid #ffc0cb;
+    border-radius: 3px;
+    padding: 4px;
+}
+::placeholder {
+    color: white;
+}
+input, select, textarea{
+    color: white;
+}
+textarea:focus, input:focus {
+    color: white;
+}
+#button{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    border: 1px solid #ffc0cb;
+    font-size: 2em;
+    font-family: 'Cookie', cursive;
+    color: rgb(255, 160, 192);
+    background-color: #ffc0cb;
+    border-radius: 3px;
+}
+#buttonHolder{
+    display: flex;
+    flex-flow:row;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+button{
+    display: flex;
+    border: 1px solid #ffc0cb;
+    font-size: 2em;
+    font-family: 'Cookie', cursive;
+    color: rgb(255, 160, 192);
+    background-color: #ffc0cb;
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+}
+button:hover{
+    background-color:palevioletred;
+    border: 2px solid palevioletred;
+    color: white;
+    transition: .5s;
+}
+#button:hover{
+    background-color:palevioletred;
+    border: 2px solid palevioletred;
+    color: white;
+    transition: .5s;
+}
+#title{
+    width: fit-content;
+    font-family: 'Cookie', cursive;
+    font-size: 4em;
+    background-color: rgb(255, 240, 251);
+    box-shadow: 5px 5px 12px pink;
+    color: pink;
+    margin: auto;
+    padding: 10px;
+    display:flex;
+    overflow: hidden;
+    border: 1px solid #ffc0cb;
+    border-radius: 3px;
+}
+#orderDrink{
+    width:11.5em;
+    display: flex;
+    position: absolute;
+    float: left;
+    
+}
+#features{
+    display: flex;
+    background-color: rgb(243, 183, 203);
+    width: 800px;
+    position: relative;
+    flex-flow:column;
+    margin: auto;
+    transition: 1s;
+    border: 15px solid pink;
+    box-shadow: 0px 0px 10px palevioletred;
+}
+#can{
+    border-radius: 3px;
+    display: flex;
+    background-color: #ffc0cb;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#enjoy{
+    
+    display: flex;
+    width: fit-content;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#flavors{
+    display: flex;
+    width: 500px;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#featuresP{
+    display: flex;
+    position: inherit;
+    font-size: 3.2em;
+    font-family: 'Amatic SC', cursive;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+    text-shadow: 3px 3px 5px pink;
+    
+}
+#about{
+    transition: .02s;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    flex-flow: column;
+    width: fit-content;
+    background-color: rgb(243, 183, 203);
+    border-radius: 5px;
+    border: 10px solid pink ;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+}
+h1{
+    width: fit-content;
+    font-family: 'Amatic SC', cursive;
+    margin: auto;
+    font-size: 2em;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(143, 83, 125);
+    text-shadow: 3px 3px 5px pink;
+    
+}
+p{
+    margin-top: 50px;
+    width: fit-content;
+    font-family: 'Amatic SC', cursive;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 2em;
+    border-radius: 5px;
+    
+}
+#homeCan{
+    display: flex;
+    width: 350px;
+    height: 300px;
+    float: right;
+}
+#carousel {
+    transition: .02s;
+    margin: 0 auto;
+    border: 10px solid pink;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    background-image: url('https://i.imgur.com/77AIEOz.png');
+    background-size:contain;
+    background-color: pink;
+    box-shadow: 2px 2px 15px rgb(143, 83, 125);
+}
+
+.frame, #carousel {
+    width: 650px;
+    height: 500px;
+    
+}
+.frame {
+    background: rgba(0, 20, 150, .5);
+    flex-shrink: 0;
+    transition: 0.4s;
+    
+}
+footer{
+    height: 100px;
+}

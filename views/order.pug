@@ -1,0 +1,14 @@
+extends base
+
+block content
+    div 
+        form(id ='myform') 
+          h1(id='title') Order Form
+          //type = 'email
+          input( name = 'name', id = 'name', placeholder='Enter name', required)
+          input( name = 'address', id='address', placeholder='Enter address', required) 
+          input(name = 'phone', id='phone', placeholder='Enter phone number', required)
+          input( name = 'email', id='email', placeholder='Enter email', required) 
+          button(id = "button", class='button') Sumbit Order
+          img(id= "orderDrink", src="https://i.imgur.com/IRkgBzG.png", alt="drink") 
+    script(src='form.js')

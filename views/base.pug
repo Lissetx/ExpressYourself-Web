@@ -1,0 +1,18 @@
+html
+    head 
+        title Cherry Boba
+        link(rel= "stylesheet", href=" ../css/style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet")
+    body
+        nav 
+            img(id="menu-icon" src="https://i.imgur.com/NYykBGc.png" alt="hamburger") 
+            section(id ="menu" class= "open")
+                each item in config.menu
+                    a(href=`${item[1]}`, id=`${item[0]}button`) #{item[0]}
+        block content
+script(src='design.js')

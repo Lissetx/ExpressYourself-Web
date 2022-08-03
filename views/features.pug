@@ -1,0 +1,8 @@
+extends base
+
+block content
+  div(id="features") 
+    each item in config.features
+      p(id="featuresP") #{item[1]}
+      img(id=`${item[0]}`, src=`${item[2]}`)
+  footer
